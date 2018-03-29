@@ -6,7 +6,7 @@
 # This script is a parser to simplify the output of john the ripper
 # When hashes are cracked, the --show option of john is not always comprehensible
 # and not really usable to provide stat or to generate dictionnary
-# So this script provides different output format with can resolve my issues with john
+# So this script provides different format outputs that can the use of john results
 
 # The following formats are available : user:password, only-password, unique-password, hashcat-format
 
@@ -88,10 +88,6 @@ while getopts ":f:c:i:o:s:h" opt; do
 	    fi
 	    ;;
 	o)
-	    # TODO: Test if the file exists
-	    # if it does not exist -> create the file with the full path given in arg
-	    # If it exists, just overwrite it
-	    # If the file exists, then I store the path in the variable
 	    if [ -f $OPTARG ]; then
 		tmp_file=$OPTARG
 		
@@ -186,6 +182,4 @@ do
 	  ;;
   esac
   echo "The output file $output_file has been created"
-  
-  #echo "Something happens here !!! But not today"
 done
