@@ -6,7 +6,7 @@
 # This script is a parser to simplify the output of john the ripper
 # When hashes are cracked, the --show option of john is not always comprehensible
 # and not really usable to provide stat or to generate dictionnary
-# So this script provides different format outputs that can the use of john results
+# So this script provides different format outputs that can ease the use of john results
 
 # The following formats are available : user:password, only-password, unique-password, hashcat-format
 
